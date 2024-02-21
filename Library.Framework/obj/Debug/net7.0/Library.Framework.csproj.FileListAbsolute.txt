@@ -1,0 +1,12 @@
+/Users/i.krimitzas/Projects/DGACM/Library.Framework/bin/Debug/net7.0/Library.Framework.deps.json
+/Users/i.krimitzas/Projects/DGACM/Library.Framework/bin/Debug/net7.0/Library.Framework.dll
+/Users/i.krimitzas/Projects/DGACM/Library.Framework/bin/Debug/net7.0/Library.Framework.pdb
+/Users/i.krimitzas/Projects/DGACM/Library.Framework/obj/Debug/net7.0/Library.Framework.GeneratedMSBuildEditorConfig.editorconfig
+/Users/i.krimitzas/Projects/DGACM/Library.Framework/obj/Debug/net7.0/Library.Framework.AssemblyInfoInputs.cache
+/Users/i.krimitzas/Projects/DGACM/Library.Framework/obj/Debug/net7.0/Library.Framework.AssemblyInfo.cs
+/Users/i.krimitzas/Projects/DGACM/Library.Framework/obj/Debug/net7.0/Library.Framework.csproj.CoreCompileInputs.cache
+/Users/i.krimitzas/Projects/DGACM/Library.Framework/obj/Debug/net7.0/Library.Framework.sourcelink.json
+/Users/i.krimitzas/Projects/DGACM/Library.Framework/obj/Debug/net7.0/Library.Framework.dll
+/Users/i.krimitzas/Projects/DGACM/Library.Framework/obj/Debug/net7.0/refint/Library.Framework.dll
+/Users/i.krimitzas/Projects/DGACM/Library.Framework/obj/Debug/net7.0/Library.Framework.pdb
+/Users/i.krimitzas/Projects/DGACM/Library.Framework/obj/Debug/net7.0/ref/Library.Framework.dll

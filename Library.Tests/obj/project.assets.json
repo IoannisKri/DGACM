@@ -1712,6 +1712,29 @@
         "build": {
           "build/netcoreapp3.1/xunit.runner.visualstudio.props": {}
         }
+      },
+      "Library.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Library.Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Library.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Domain.dll": {}
+        }
+      },
+      "Library.Framework/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Framework.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Framework.dll": {}
+        }
       }
     }
   },
@@ -5506,10 +5529,22 @@
         "xunit.runner.visualstudio.2.4.5.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "Library.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Library.Domain/Library.Domain.csproj",
+      "msbuildProject": "../Library.Domain/Library.Domain.csproj"
+    },
+    "Library.Framework/1.0.0": {
+      "type": "project",
+      "path": "../Library.Framework/Library.Framework.csproj",
+      "msbuildProject": "../Library.Framework/Library.Framework.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Library.Domain >= 1.0.0",
+      "Library.Framework >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.5.0",
       "coverlet.collector >= 3.2.0",
       "xunit >= 2.4.2",
@@ -5540,7 +5575,14 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/i.krimitzas/Projects/DGACM/Library.Domain/Library.Domain.csproj": {
+              "projectPath": "/Users/i.krimitzas/Projects/DGACM/Library.Domain/Library.Domain.csproj"
+            },
+            "/Users/i.krimitzas/Projects/DGACM/Library.Framework/Library.Framework.csproj": {
+              "projectPath": "/Users/i.krimitzas/Projects/DGACM/Library.Framework/Library.Framework.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -5585,12 +5627,22 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.15, 7.0.15]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.15, 7.0.15]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.313/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/RuntimeIdentifierGraph.json"
       }
     }
   }

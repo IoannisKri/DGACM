@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JZUmmZ18Jlv+d5isWhjpd36YBI9DwT5loC9QVKgwmPyJuIcd4GsVPcjnS4wrluLrtaiEHfMg+mne4J4tFRRM1w==",
+  "dgSpecHash": "+kmRT+JoQb33JRIh25VVO69KHCDseoPkffxxMTNHvkI2lr7tHSf5C0QLvJlpZ1EfNWl+x5+1XfqaZWkCdf2wsg==",
   "success": true,
   "projectFilePath": "/Users/i.krimitzas/Projects/DGACM/Library.Tests/Library.Tests.csproj",
   "expectedPackageFiles": [
@@ -92,7 +92,9 @@
     "/Users/i.krimitzas/.nuget/packages/xunit.core/2.4.2/xunit.core.2.4.2.nupkg.sha512",
     "/Users/i.krimitzas/.nuget/packages/xunit.extensibility.core/2.4.2/xunit.extensibility.core.2.4.2.nupkg.sha512",
     "/Users/i.krimitzas/.nuget/packages/xunit.extensibility.execution/2.4.2/xunit.extensibility.execution.2.4.2.nupkg.sha512",
-    "/Users/i.krimitzas/.nuget/packages/xunit.runner.visualstudio/2.4.5/xunit.runner.visualstudio.2.4.5.nupkg.sha512"
+    "/Users/i.krimitzas/.nuget/packages/xunit.runner.visualstudio/2.4.5/xunit.runner.visualstudio.2.4.5.nupkg.sha512",
+    "/Users/i.krimitzas/.nuget/packages/microsoft.netcore.app.ref/7.0.15/microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
+    "/Users/i.krimitzas/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.15/microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "JWKnxRTOU8TYKDB8D/VKNpTsZzqrKjsQWx/gaX+W7bp4z4r1gGDo+kb6JFqgGxhUi9L3dfjNRwlID1jVmdYWgA==",
+  "dgSpecHash": "6i5VZuUDdLd1xztuTurBeK4qvZMb5lVCfEwRW4BZPDQtLHh7nd9eLT7T0+rT+popC/dPgaq1lq2s+ygo6b5DUQ==",
   "success": true,
   "projectFilePath": "/Users/i.krimitzas/Projects/DGACM/Library.Framework/Library.Framework.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/i.krimitzas/.nuget/packages/microsoft.netcore.app.ref/7.0.15/microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
+    "/Users/i.krimitzas/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.15/microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512"
+  ],
   "logs": []
 }
