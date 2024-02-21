@@ -14,7 +14,7 @@ namespace Library.Domain
 
         public int Value { get; }
 
-        public Quantity(string value)
+        internal Quantity(string value)
         {
             if (value == "")
                 throw new ArgumentException("Book Quantity cannot be an empty string.");
@@ -32,7 +32,7 @@ namespace Library.Domain
 
         }
 
-        public Quantity(int value)
+        internal Quantity(int value)
         {
             if (value > 0)
                 

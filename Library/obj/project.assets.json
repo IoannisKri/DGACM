@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "Library.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Library.Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Library.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Domain.dll": {}
+        }
+      },
+      "Library.Framework/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Framework.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Framework.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Library.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Library.Domain/Library.Domain.csproj",
+      "msbuildProject": "../Library.Domain/Library.Domain.csproj"
+    },
+    "Library.Framework/1.0.0": {
+      "type": "project",
+      "path": "../Library.Framework/Library.Framework.csproj",
+      "msbuildProject": "../Library.Framework/Library.Framework.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "Library.Domain >= 1.0.0",
+      "Library.Framework >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/i.krimitzas/.nuget/packages/": {}
@@ -31,7 +69,14 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/i.krimitzas/Projects/DGACM/Library.Domain/Library.Domain.csproj": {
+              "projectPath": "/Users/i.krimitzas/Projects/DGACM/Library.Domain/Library.Domain.csproj"
+            },
+            "/Users/i.krimitzas/Projects/DGACM/Library.Framework/Library.Framework.csproj": {
+              "projectPath": "/Users/i.krimitzas/Projects/DGACM/Library.Framework/Library.Framework.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

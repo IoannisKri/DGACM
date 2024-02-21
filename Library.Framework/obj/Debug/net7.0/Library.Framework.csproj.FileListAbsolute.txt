@@ -5,8 +5,8 @@
 /Users/i.krimitzas/Projects/DGACM/Library.Framework/obj/Debug/net7.0/Library.Framework.AssemblyInfoInputs.cache
 /Users/i.krimitzas/Projects/DGACM/Library.Framework/obj/Debug/net7.0/Library.Framework.AssemblyInfo.cs
 /Users/i.krimitzas/Projects/DGACM/Library.Framework/obj/Debug/net7.0/Library.Framework.csproj.CoreCompileInputs.cache
-/Users/i.krimitzas/Projects/DGACM/Library.Framework/obj/Debug/net7.0/Library.Framework.sourcelink.json
 /Users/i.krimitzas/Projects/DGACM/Library.Framework/obj/Debug/net7.0/Library.Framework.dll
 /Users/i.krimitzas/Projects/DGACM/Library.Framework/obj/Debug/net7.0/refint/Library.Framework.dll
 /Users/i.krimitzas/Projects/DGACM/Library.Framework/obj/Debug/net7.0/Library.Framework.pdb
 /Users/i.krimitzas/Projects/DGACM/Library.Framework/obj/Debug/net7.0/ref/Library.Framework.dll
+/Users/i.krimitzas/Projects/DGACM/Library.Framework/obj/Debug/net7.0/Library.Framework.csproj.AssemblyReference.cache

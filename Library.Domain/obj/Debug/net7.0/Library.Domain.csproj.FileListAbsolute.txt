@@ -8,7 +8,6 @@
 /Users/i.krimitzas/Projects/DGACM/Library.Domain/obj/Debug/net7.0/Library.Domain.AssemblyInfoInputs.cache
 /Users/i.krimitzas/Projects/DGACM/Library.Domain/obj/Debug/net7.0/Library.Domain.AssemblyInfo.cs
 /Users/i.krimitzas/Projects/DGACM/Library.Domain/obj/Debug/net7.0/Library.Domain.csproj.CoreCompileInputs.cache
-/Users/i.krimitzas/Projects/DGACM/Library.Domain/obj/Debug/net7.0/Library.Domain.sourcelink.json
 /Users/i.krimitzas/Projects/DGACM/Library.Domain/obj/Debug/net7.0/Library.Domain.csproj.CopyComplete
 /Users/i.krimitzas/Projects/DGACM/Library.Domain/obj/Debug/net7.0/Library.Domain.dll
 /Users/i.krimitzas/Projects/DGACM/Library.Domain/obj/Debug/net7.0/refint/Library.Domain.dll

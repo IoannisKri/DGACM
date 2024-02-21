@@ -12,7 +12,7 @@ namespace Library.Domain
         public static BookTitle FromString(string bookTitle) => new BookTitle(bookTitle);
         public string Value { get; }
 
-        public BookTitle(string value)
+        internal BookTitle(string value)
         {
             if (value.Length > 100)
                 throw new ArgumentOutOfRangeException(
@@ -23,9 +23,15 @@ namespace Library.Domain
             Value = value;
         }
 
-        public static implicit operator string(BookTitle email) =>
-            email.Value;
+        public static implicit operator string(BookTitle bookTitle) =>
+             bookTitle.Value;
 
+
+
+        public static implicit operator BookTitle(string value)
+            => new BookTitle(value);
+
+        public override string ToString() => Value.ToString();
 
     }
 }
