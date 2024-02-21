@@ -26,9 +26,8 @@ namespace Library.Domain
         public enum ReservationState
         {
             Pending,
-            Confirmed,
-            Due,
-            Cancelled
+            Confirmed
+            
         }
 
 
