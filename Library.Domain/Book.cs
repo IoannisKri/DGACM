@@ -59,7 +59,13 @@ namespace Library.Domain
         
             public void RequestReservation(ReservationDate dateStart,  ReservationDate dateEnd, PatronId patronId, ReservationId reservationId)
             {
-                Apply(new Events.ReservationRequested
+            int cnt = (from res in reservations where res.dateEnd.Value >= dateStart.Value && res.dateStart.Value <= dateEnd.Value select res).Count();
+
+
+            bool totalReservationsCapReached = (from res in reservations where res.dateEnd.Value >= dateStart.Value && res.dateStart.Value <= dateEnd.Value select res).Count() >= quantity.Value;
+            if(totalReservationsCapReached)
+                throw new ArgumentException("Reservations are above quantity");
+            Apply(new Events.ReservationRequested
                 {
                     Id = Id,
                     dateStart = dateStart,
@@ -147,9 +153,9 @@ namespace Library.Domain
 
         protected override void EnsureValidState()
         {
-            bool totalReservationsCapReached = (from res in reservations where res.dateEnd.Value >= ReservationDate.FromString("2024/02/23").Value && res.dateStart.Value <= ReservationDate.FromString("2024/02/24").Value select res).Count()==quantity.Value;
+            bool confirmedButUnpaid = (from res in reservations where res.state == Reservation.ReservationState.Confirmed && res.isPaid == false select res).Count() > 0;
 
-            var valid = quantity.Value >= 0 && totalReservationsCapReached;
+            var valid = quantity.Value >= 0 && !confirmedButUnpaid;
             if (!valid)
                 throw new InvalidEntityStateException(
                     this, $"State-checks failed");

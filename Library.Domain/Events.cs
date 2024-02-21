@@ -69,6 +69,21 @@ namespace Library.Domain
 
             public ReservationState state { get; set; }
         }
+        public class PatronCreated
+        {
+            public Guid Id { get; set; }
+
+            public PatronName patronName { get; set; }
+        }
+
+
+        public class PatronReservationAdded
+        {
+            public Guid Id { get; set; }
+
+            public ReservationId reservationId { get; set; }
+        }
+
 
 
 

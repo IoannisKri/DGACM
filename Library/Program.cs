@@ -9,7 +9,7 @@ BookCategory bookCategory = BookCategory.FromString("Drama");
 Quantity bookQuantity = Quantity.FromInt(3);
 Price bookPrice = Price.FromDecimal(10.5m);
 Book myBook = Book.CreateBook(bookId, bookTitle, bookQuantity,bookCategory,bookPrice);
-myBook.UpdateBookQuantity(Quantity.FromInt(1));
+//myBook.UpdateBookQuantity(Quantity.FromInt(2));
 
 PatronId patronId = new(Guid.NewGuid());
 
@@ -34,15 +34,16 @@ myBook.RequestReservation(starDate, endDate, patronId, reservationId3);
 
 int unpaidConfirmedReservations = (from res in myBook.reservations where res.dateEnd.Value>= ReservationDate.FromString("2025/02/23").Value && res.dateStart.Value <= ReservationDate.FromString("2025/02/24").Value select res).Count();
 
-Console.WriteLine(unpaidConfirmedReservations);
+//Console.WriteLine(unpaidConfirmedReservations);
 
 //Price paidAmount = Price.FromDecimal(21.0m);
 //myBook.PayReservation(reservationId, paidAmount);
 ReservationId reservationId4 = new(Guid.NewGuid());
 
-myBook.RequestReservation(starDate, endDate, patronId, reservationId4);
+//myBook.RequestReservation(starDate, endDate, patronId, reservationId4);
 
 
-
+Patron patron = Patron.CreatePatron(patronId, "ioannis");
+patron.AddReservation(reservationId3);
 
 Console.WriteLine("Hello, World!");
