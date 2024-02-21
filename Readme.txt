@@ -87,3 +87,10 @@ Due to lack of time I couldn't implement all the features and tests I wanted. A 
 Additionally I wanted to rearrange the project structure but it's too late for it
 
 Each event is transmitted and can be seen in debug mode
+
+## References
+
+
+Hands-On Domain-Driven Design with .NET Core
+
+Alexey Zimarev
