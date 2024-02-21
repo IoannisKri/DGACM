@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using Library.Domain;
 using System.Diagnostics;
+using static Library.Domain.Reservation;
 
 namespace Library.Domain
 {
@@ -21,16 +22,57 @@ namespace Library.Domain
             public Guid Id { get; set; }
             public string bookTitle { get; set; }
             public int quantity { get; set; }
+            public string bookCategory { get; set; }
+            public decimal bookPrice { get; set; }
+
+
+
         }
 
-        public class BookUpdated
+        public class BookQuantityUpdated
         {
             public Guid Id { get; set; }
-            public string bookTitle { get; set; }
             public int quantity { get; set; }
         }
 
-        
+        public class BookTitleUpdated
+        {
+            public Guid Id { get; set; }
+            public string bookTitle { get; set; }
+        }
+
+
+        public class ReservationRequested
+        {
+            public Guid Id { get; set; }
+            public Guid patronId { get; set; }
+
+            public Price bookPrice { get; set; }
+            public ReservationDate dateStart { get; set; }
+            public ReservationDate dateEnd { get; set; }
+
+            public Guid reservationId { get; set; }
+        }
+        public class ReservationPaid
+        {
+            public Guid Id { get; set; }
+
+            public Price paidAmount { get; set; }
+     
+
+            public Guid reservationId { get; set; }
+        }
+
+        public class ReservationStateUpdated
+        {
+            public Guid Id { get; set; }
+
+            public ReservationState state { get; set; }
+        }
+
+
+
+
 
     }
 }

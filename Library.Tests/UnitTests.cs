@@ -47,6 +47,27 @@ public class UnitTest1
 
 
     }
+    /*
+
+
+    [Fact]
+    public void UpdateBookQuantityWithNegative()
+    {
+        BookId bookId = new(Guid.NewGuid());
+        BookTitle bookTitle = BookTitle.FromString("Amazing Book");
+        Quantity bookQuantity = Quantity.FromInt(5);
+        Book myBook = Book.CreateBook(bookId, bookTitle, bookQuantity);
+
+        Assert.Throws<InvalidEntityStateException>(() =>
+        {
+            myBook.UpdateBookQuantity(Quantity.FromInt(-1));
+
+        });
+    */
+
+    }
+
+
 
 
 
